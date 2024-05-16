@@ -1,0 +1,74 @@
+body{
+
+}
+
+.container{
+    width: 90%;
+    border-radius: 15px;
+    background-color: gray;
+    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+    flex-direction: column; /* Alinea los elementos internos verticalmente */
+    align-items: center; /* Centra los elementos internos horizontalmente */
+    justify-content: center; /* Centra los elementos internos verticalmente */
+}
+
+.barra{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+}
+
+.perfil{
+    grid-column: span 1;
+}
+.relleno{
+    grid-column: span 1;
+    display: flex;
+}
+.relleno button{
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    background-color: transparent;
+}
+.btnIzquierda{
+    flex: 30%;
+}
+.mes{
+    flex: 40%;
+    text-align: center;
+}
+.btnDerecha{
+    flex: 30%;
+}
+
+.opciones{
+    grid-column: span 1;
+}
+
+.contenido {
+    display: flex;
+}
+
+.complemtos {
+    flex: 20%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.calendario {
+    flex: 50%;
+    border: 1px solid gold;
+    padding: 2px;
+    text-align: center;
+}
+
+.eventos {
+    flex: 30%;
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+ 
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+}
